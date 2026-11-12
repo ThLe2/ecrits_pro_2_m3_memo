@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiche mémo — L'accord du participe passé</title>
+<style>
+:root{--prune:#8C1E70;--prune-fonce:#5E1349;--prune-clair:#F4E6EE;--accent:#C77BAA;
+ --vert:#283C28;--gris:#3C3C3C;--gris-moyen:#8A7A85;--filet:#E8DCE5;--creme:#FAF6F8;
+ --ok:#2F7A4F;--ko:#B23B3B;--amb:#B5852A;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--gris);
+ font-family:"Nunito","Segoe UI",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.62}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px 60px}
+header.bandeau{background:var(--prune-fonce);color:#fff;padding:18px 0;border-bottom:4px solid var(--accent)}
+header.bandeau .wrap{padding-bottom:0}
+.chapitre{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#EAD3E3}
+.chapitre span{color:var(--accent);margin:0 6px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:27px;line-height:1.25;margin:8px 0 4px;color:#fff}
+.sous{color:#EAD3E3;font-size:14.5px;margin:0}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:20px;color:var(--prune-fonce);
+ margin:34px 0 0;padding-bottom:8px;border-bottom:2px solid var(--filet)}
+h2 .num{color:var(--accent);margin-right:8px}
+h3{font-size:15px;color:var(--vert);margin:20px 0 8px;letter-spacing:.02em}
+.carte{background:#fff;border:1px solid var(--filet);border-radius:10px;padding:20px 22px;margin:18px 0;
+ box-shadow:0 1px 2px rgba(94,19,73,.05)}
+.enc{background:var(--prune-clair);border-left:5px solid var(--prune);padding:14px 18px;
+ border-radius:0 8px 8px 0;margin:18px 0;font-size:15.2px}
+.enc .t{display:block;font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;
+ font-weight:800;color:var(--prune-fonce);margin-bottom:6px}
+.enc.al{background:#FBF4F4;border-left-color:var(--ko)}.enc.al .t{color:var(--ko)}
+.enc.ci{background:#FCF8F0;border-left-color:var(--amb)}.enc.ci .t{color:#8A6418}
+.situ{background:#FCF9FB;border:1px dashed var(--filet);border-radius:8px;padding:16px 18px;margin:16px 0;font-size:15.2px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.duo>div{background:#fff;border:1px solid var(--filet);border-radius:9px;padding:15px 17px;font-size:14.8px}
+.duo .h{font-weight:800;color:var(--prune-fonce);margin-bottom:7px;font-size:14.5px}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0}
+.tri>div{background:#fff;border:1px solid var(--filet);border-radius:9px;padding:14px 15px;font-size:14.3px}
+.quad{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.quad>div{background:#fff;border:1px solid var(--filet);border-radius:9px;padding:12px 13px;font-size:13.6px}
+.quad .h{font-weight:800;color:var(--prune-fonce);margin-bottom:6px;font-size:13px;
+ text-transform:uppercase;letter-spacing:.04em}
+.tri .h{font-weight:800;color:var(--prune-fonce);margin-bottom:6px;font-size:13.5px;
+ text-transform:uppercase;letter-spacing:.05em}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.8px;background:#fff}
+th,td{border:1px solid var(--filet);padding:9px 12px;text-align:left}
+thead th{background:var(--prune-clair);color:var(--prune-fonce);font-size:13.5px}
+tbody th{font-weight:600;color:var(--gris)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td,tr.tot th{background:#FBF3F8;font-weight:800;color:var(--prune-fonce)}
+.dl{display:inline-flex;align-items:center;gap:9px;background:var(--prune);color:#fff;text-decoration:none;
+ padding:11px 20px;border-radius:8px;font-weight:700;font-size:15px;margin:20px 0 4px}
+.dl:hover{background:var(--prune-fonce)}
+ol.q{padding-left:0;list-style:none;counter-reset:q}
+ol.q>li{margin:16px 0;padding-left:38px;position:relative}
+ol.q>li::before{counter-increment:q;content:counter(q);position:absolute;left:0;top:1px;
+ width:26px;height:26px;border-radius:50%;background:var(--prune-clair);color:var(--prune-fonce);
+ font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+b,strong{color:var(--vert)}
+footer{text-align:center;font-size:12.5px;color:var(--gris-moyen);padding:26px 18px 12px;
+ border-top:1px solid var(--filet);margin-top:44px}
+@media(max-width:860px){.quad{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.duo,.tri,.quad{grid-template-columns:1fr}h1{font-size:22px}}
+@media print{body{background:#fff}.dl{display:none}header.bandeau{background:#5E1349 !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+td{vertical-align:top}td:first-child{white-space:nowrap}</style></head>
+<body>
+<header class="bandeau"><div class="wrap">
+ <div class="chapitre">Écrits professionnels 2/6 <span>/</span> Module 3</div><h1>L'accord du participe passé</h1><p class="sous">Fiche mémo — employé seul, avec être, avec avoir</p>
+</div></header>
+<div class="wrap">
+<a class="dl" href="EP_2_M3_Fiche_memo.pdf" download>⬇ Télécharger la fiche mémo (PDF)</a>
+
+<h2><span class="num">1 ·</span>Trouver la bonne terminaison</h2>
+<div class="carte">
+<p>Avant d'accorder, il faut écrire la bonne lettre finale. Un réflexe suffit : <b>mettez le participe au féminin</b>, la lettre muette s'entend.</p>
+<table><thead><tr><th>Terminaison</th><th>Verbes</th><th>Test du féminin</th></tr></thead><tbody>
+<tr><td><b>-é</b></td><td>verbes en -er</td><td>un dossier clôtur<b>é</b> · une commande bloqu<b>ée</b></td></tr>
+<tr><td><b>-i / -is</b></td><td>finir, choisir, mettre, transmettre…</td><td>un dossier fin<b>i</b> → finie · un document transm<b>is</b> → transmi<b>se</b></td></tr>
+<tr><td><b>-t</b></td><td>faire, dire, écrire, ouvrir…</td><td>un dossier ouver<b>t</b> → ouver<b>te</b> · un retour fai<b>t</b> → fai<b>te</b></td></tr>
+<tr><td><b>-u</b></td><td>recevoir, prévoir, rendre…</td><td>un colis reç<b>u</b> → reç<b>ue</b></td></tr>
+</tbody></table>
+<div class="enc al"><span class="t">LA CONFUSION À ÉVITER</span>-é ou -er ? Remplacez par <b>pris / prendre</b> (vu en écrits pro 1) : « la commande a été bloqu<b>ée</b> » (prise), « merci de bloqu<b>er</b> la commande » (prendre).</div>
+</div>
+
+<h2><span class="num">2 ·</span>Les trois règles qui couvrent l'essentiel</h2>
+<div class="carte">
+<table><thead><tr><th>Cas</th><th>La règle</th><th>Exemples en relation client</th></tr></thead><tbody>
+<tr><td><b>Employé seul</b></td><td>Il s'accorde comme un adjectif avec le nom qu'il accompagne.</td><td>les pièces <b>demandées</b> · une commande <b>annulée</b> · les frais <b>facturés</b></td></tr>
+<tr><td><b>Avec être</b> (y compris « a été », « ont été »)</td><td>Il s'accorde avec le <b>sujet</b>.</td><td>Votre commande <b>est bloquée</b> · Les colis <b>ont été livrés</b> · La facture <b>a été envoyée</b></td></tr>
+<tr><td><b>Avec avoir</b></td><td>Il ne s'accorde <b>jamais avec le sujet</b>. Il s'accorde avec le complément d'objet direct (COD) <b>seulement s'il est placé avant</b> le verbe.</td><td>Nous avons <b>reçu</b> vos justificatifs (COD après) · Les justificatifs que nous avons <b>reçus</b> (COD « que » avant)</td></tr>
+</tbody></table>
+<div class="enc"><span class="t">LA MÉTHODE AVEC AVOIR</span>Posez la question <b>« quoi ? »</b> ou <b>« qui ? »</b> après le participe. Si la réponse se trouve <b>avant</b> le verbe (souvent « que », « l' », « les »), accordez avec elle. Sinon, n'accordez pas.</div>
+</div>
+
+<h2><span class="num">3 ·</span>Les cas qui reviennent dans les écrits de relation client</h2>
+<div class="carte">
+<table><thead><tr><th>Phrase type</th><th>Raisonnement</th></tr></thead><tbody>
+<tr><td>Les justificatifs que vous nous avez <b>transmis</b></td><td>Transmis quoi ? « que » = les justificatifs, avant → masculin pluriel (le s est déjà là).</td></tr>
+<tr><td>La remise que nous avons <b>appliquée</b></td><td>Appliqué quoi ? « que » = la remise, avant → appliquée.</td></tr>
+<tr><td>Votre demande, je l'ai <b>transmise</b> au service</td><td>Transmis quoi ? « l' » = votre demande, avant → transmise.</td></tr>
+<tr><td>Nous vous avons <b>adressé</b> un courrier</td><td>Adressé quoi ? un courrier, après → pas d'accord. « vous » n'est pas le COD.</td></tr>
+<tr><td>Vos coordonnées ont été <b>mises</b> à jour</td><td>« ont été » = être → accord avec le sujet, féminin pluriel.</td></tr>
+<tr><td>Les commandes <b>perdues</b> doivent faire l'objet d'une réclamation</td><td>Employé seul → accord avec « les commandes ».</td></tr>
+</tbody></table>
+</div>
+
+<h2><span class="num">4 ·</span>À retenir</h2>
+<div class="carte">
+<ol class="q"><li>Mettez le participe au féminin pour trouver sa lettre finale.</li><li>Seul ou avec être : accord avec le nom ou le sujet.</li><li>Avec avoir : jamais d'accord avec le sujet ; accord avec le COD seulement s'il est placé avant.</li><li>« a été », « ont été » : c'est l'auxiliaire être — accord avec le sujet.</li></ol>
+</div>
+
+
+<footer>TMK Performances - N° Siret : 49841924100027 - Code NAF : 8559A</footer>
+</div>
+</body></html>
